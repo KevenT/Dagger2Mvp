@@ -43,7 +43,8 @@ public class MainPresenter implements MainContract.presenter {
     }
 
     public void main(){
-        locationService.getIPInfo("myip")
+        //locationService.getIPInfo("myip")
+         locationService.getIPInfo("119.60.106.229")
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<TaobaoIPLocationInfo>() {
